@@ -29,7 +29,10 @@ export default function FundamentalPage({ tabName }) {
           <DataBlocks blockData={blockData}></DataBlocks>
         </section>
         <section className="grid md:grid-cols-2 xl:grid-cols-4 xl:grid-rows-3 xl:grid-flow-col gap-6">
-          <ProgressGraph row={2}></ProgressGraph>
+          <div className="flex flex-col md:col-span-2 md:row-span-2 bg-white shadow rounded-lg">
+            <ProgressGraph></ProgressGraph>
+          </div>
+
           <div className="flex items-center p-8 bg-white shadow rounded-lg">
             <div className="inline-flex flex-shrink-0 items-center justify-center h-16 w-16 text-yellow-600 bg-yellow-100 rounded-full mr-6">
               <svg
