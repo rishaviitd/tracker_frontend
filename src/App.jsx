@@ -3,7 +3,6 @@ import { useState } from "react";
 import FundamentalPage from "./pages/FundamentalPage"; // Import your pages here
 import CollagePage from "./pages/CollagePage";
 import ExpensesPage from "./pages/ExpensesPage";
-import EntertainmentPage from "./pages/EntertainmentPage";
 
 export default function App() {
   const [tabName, setTabName] = useState("Fundamentals");
@@ -22,9 +21,6 @@ export default function App() {
           {tabName === "Fundamentals" && <FundamentalPage tabName={tabName} />}
           {tabName === "Collage Stuff" && <CollagePage tabName={tabName} />}
           {tabName === "Expenses" && <ExpensesPage tabName={tabName} />}
-          {tabName !== "Fundamentals" &&
-            tabName !== "Collage Stuff" &&
-            tabName !== "Expenses" && <EntertainmentPage tabName={tabName} />}
         </div>
       </div>
     </>

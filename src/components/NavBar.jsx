@@ -72,17 +72,6 @@ export default function NavBar({ onTabChange }) {
           >
             Expenses
           </a>
-
-          {/* Expenses Tab */}
-          {/* <a
-            href="#"
-            className="text-gray-600 hover:text-gray-800 focus:text-gray-800 font-medium"
-            onClick={() => {
-              HandleTabClick("Entertainment");
-            }}
-          >
-            Entertainment
-          </a> */}
         </nav>
 
         {/* User Profile and Settings */}

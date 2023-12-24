@@ -26,8 +26,8 @@ export default function ExpensesPage({ tabName }) {
         <section class="grid md:grid-cols-2 xl:grid-cols-4 gap-6">
           <DataBlocks blockData={blockData}></DataBlocks>
         </section>
-        <section className="grid md:grid-cols-2 xl:grid-cols-4 xl:grid-rows-3 xl:grid-flow-col gap-6">
-          <ProgressGraph row={5}></ProgressGraph>
+        <section className="grid md:grid-cols-5 xl:grid-cols-4 xl:grid-rows-2 xl:grid-flow-col gap-6">
+          <ProgressGraph></ProgressGraph>
           <div className="row-span-5 bg-white shadow rounded-lg">
             <List listInfo={"Expenses"}></List>
           </div>
