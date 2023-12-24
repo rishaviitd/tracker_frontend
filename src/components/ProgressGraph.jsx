@@ -1,8 +1,8 @@
-export default function ProgressGraph({ rowValue }) {
+export default function ProgressGraph({ row }) {
   return (
     <>
       <div
-        className={`flex flex-col md:col-span-2 md:row-span-${rowValue} bg-white shadow rounded-lg `}
+        className={`flex flex-col md:col-span-2 md:row-span-${row} bg-white shadow rounded-lg`}
       >
         <div className="px-6 py-5 font-semibold border-b border-gray-100">
           Progress graph
